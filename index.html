@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Anirban Sikdar — Software Test Engineer</title>
+<meta name="description" content="Anirban Sikdar — Software Test Engineer in Kolkata with 5+ years of experience in manual and automation testing. Selenium WebDriver with Java, TestNG, Apache JMeter, OWASP ZAP and Burp Suite." />
+<meta name="author" content="Anirban Sikdar" />
+<meta name="theme-color" content="#08090b" id="themeColorMeta" />
+
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Anirban Sikdar — Software Test Engineer" />
+<meta property="og:description" content="5+ years of quality engineering across automation, API, performance and security testing." />
+
+<!-- Theme bootstrap — runs before first paint so the page never flashes the
+     wrong palette. Must stay inline; an external file loads too late. -->
+<script>
+  (function () {
+    try {
+      var saved = localStorage.getItem('as-theme');
+      var light = saved ? saved === 'light'
+                        : window.matchMedia('(prefers-color-scheme: light)').matches;
+      document.documentElement.setAttribute('data-theme', light ? 'light' : 'dark');
+    } catch (e) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  })();
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- Film grain + pointer aura: purely atmospheric, never interactive -->
+<div class="grain" aria-hidden="true"></div>
+<div class="aura" id="aura" aria-hidden="true"></div>
+
+<!-- ============================== HEADER ============================== -->
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a href="#hero" class="brand" aria-label="Anirban Sikdar — back to top">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7"/></svg>
+      </span>
+      <span class="brand-text">
+        <strong>Anirban Sikdar</strong>
+        <small>Software Test Engineer</small>
+      </span>
+    </a>
+
+    <nav class="nav" id="primaryNav" aria-label="Primary">
+      <ul class="nav-list">
+        <li><a href="#about" class="nav-link"><span class="nav-num">01</span>About</a></li>
+        <li><a href="#skills" class="nav-link"><span class="nav-num">02</span>Skills</a></li>
+        <li><a href="#experience" class="nav-link"><span class="nav-num">03</span>Experience</a></li>
+        <li><a href="#awards" class="nav-link"><span class="nav-num">04</span>Awards</a></li>
+        <li><a href="#education" class="nav-link"><span class="nav-num">05</span>Education</a></li>
+        <li><a href="#contact" class="nav-link"><span class="nav-num">06</span>Contact</a></li>
+      </ul>
+      <div class="nav-footer">
+        <a class="btn btn-primary" href="assets/Anirban-Sikdar-Resume.pdf" target="_blank" rel="noopener">Download Résumé</a>
+      </div>
+    </nav>
+
+    <div class="header-actions">
+      <a class="btn btn-primary btn-sm header-cta magnetic" href="#contact">
+        <span class="btn-inner">Get in touch</span>
+      </a>
+
+      <button class="icon-btn" id="themeToggle" type="button" aria-label="Switch theme" title="Toggle light / dark theme">
+        <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.6M12 19.4V22M2 12h2.6M19.4 12H22M4.9 4.9l1.9 1.9M17.2 17.2l1.9 1.9M19.1 4.9l-1.9 1.9M6.8 17.2l-1.9 1.9"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a7 7 0 0 0 10.7 10.7z"/></svg>
+      </button>
+
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="primaryNav">
+        <span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+</header>
+
+<main id="main">
+
+  <!-- ================================ HERO ================================ -->
+  <section class="hero" id="hero">
+    <div class="hero-bg" aria-hidden="true">
+      <span class="hero-grid"></span>
+      <span class="hero-glow hero-glow-1"></span>
+      <span class="hero-glow hero-glow-2"></span>
+    </div>
+
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <p class="status-pill reveal">
+          <span class="ping" aria-hidden="true"><span></span></span>
+          Available for new opportunities
+          <span class="pill-sep" aria-hidden="true"></span>
+          <span class="pill-mono">Kolkata, IN</span>
+        </p>
+
+        <h1 class="hero-title" data-split>
+          I break software
+          <em>so your users never do.</em>
+        </h1>
+
+        <p class="hero-role reveal">
+          <span>Software Test Engineer specialising in</span>
+          <span class="rotator" id="rotator" aria-live="polite">
+            <span class="rotator-word is-active">Automation Frameworks</span>
+          </span>
+        </p>
+
+        <p class="hero-sub reveal">
+          5+ years across manual and automation testing of web platforms — building
+          <strong>Selenium&nbsp;+&nbsp;Java</strong> frameworks, validating business-critical
+          workflows end to end, and hardening releases with <strong>JMeter</strong> load profiles
+          and <strong>OWASP&nbsp;ZAP</strong> security scans.
+        </p>
+
+        <div class="hero-cta reveal">
+          <a class="btn btn-primary btn-lg magnetic" href="assets/Anirban-Sikdar-Resume.pdf" target="_blank" rel="noopener">
+            <span class="btn-inner">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11M7.5 10.5L12 15l4.5-4.5"/><path d="M5 19h14"/></svg>
+              View Résumé
+            </span>
+          </a>
+          <a class="btn btn-ghost btn-lg magnetic" href="#contact">
+            <span class="btn-inner">
+              Contact me
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Decorative regression console -->
+      <aside class="hero-visual reveal" aria-hidden="true">
+        <div class="console" data-tilt>
+          <div class="console-bar">
+            <span class="console-dots"><i></i><i></i><i></i></span>
+            <span class="console-title">eauction-regression · TestNG</span>
+            <span class="console-badge">passing</span>
+          </div>
+          <div class="console-body">
+            <pre class="console-out" id="consoleOut" data-typed></pre>
+          </div>
+          <div class="console-foot">
+            <span><b>38</b> tests</span>
+            <span><b>0</b> failures</span>
+            <span><b>2m 14s</b></span>
+          </div>
+        </div>
+
+        <div class="chip chip-1">
+          <span class="chip-icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-3.6 8-10V5.5L12 2.5 4 5.5V12c0 6.4 8 10 8 10z"/><path d="M9.2 12.2l2 2 3.6-4"/></svg></span>
+          <span><b>OWASP ZAP</b><small>Scans in CI</small></span>
+        </div>
+
+        <div class="chip chip-2">
+          <span class="chip-icon"><svg viewBox="0 0 24 24"><path d="M4 19V5M4 19h16"/><path d="M8 15V9M12.5 15V6.5M17 15v-4"/></svg></span>
+          <span><b>JMeter</b><small>Load profiles</small></span>
+        </div>
+      </aside>
+    </div>
+
+    <!-- Stat bar -->
+    <div class="container">
+      <ul class="statbar reveal" aria-label="Career highlights">
+        <li>
+          <span class="stat-num" data-count="5" data-suffix="+">0</span>
+          <span class="stat-label">Years of experience</span>
+        </li>
+        <li>
+          <span class="stat-num" data-count="9">0</span>
+          <span class="stat-label">Platforms tested</span>
+        </li>
+        <li>
+          <span class="stat-num" data-count="6">0</span>
+          <span class="stat-label">Enterprise clients</span>
+        </li>
+        <li>
+          <span class="stat-num" data-count="5">0</span>
+          <span class="stat-label">Awards &amp; recognitions</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============================ CLIENT STRIP ============================ -->
+  <section class="clients" aria-label="Clients delivered for">
+    <div class="container clients-inner">
+      <p class="clients-label">Quality delivered for</p>
+      <ul class="clients-list">
+        <li class="reveal">SAIL</li>
+        <li class="reveal">Adani Cement</li>
+        <li class="reveal">Bangur Cement</li>
+        <li class="reveal">BT&nbsp;Europe</li>
+        <li class="reveal">WhatsApp&nbsp;/&nbsp;META</li>
+        <li class="reveal">mjunction</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- =============================== ABOUT =============================== -->
+  <section class="section" id="about">
+    <div class="container">
+      <header class="section-head">
+        <span class="section-index">01</span>
+        <div class="section-head-copy">
+          <span class="section-kicker reveal">About</span>
+          <h2 class="section-title reveal">Quality treated as an <em>engineering discipline</em></h2>
+        </div>
+      </header>
+
+      <div class="about-grid">
+        <div class="about-copy">
+          <p class="lead reveal">
+            I am a results-driven Software Test Engineer with over <strong>5 years of
+            experience</strong> testing web-based applications across B2B e-commerce and
+            e-auctions, enterprise procurement, national loyalty platforms, and global telecom
+            messaging.
+          </p>
+          <p class="reveal">
+            My work covers the full testing lifecycle — requirement analysis, test planning and
+            case design, functional, regression, smoke, sanity, system and integration execution,
+            API validation in Postman, database verification in MySQL, and defect tracking through
+            to closure in JIRA and TestRail. Alongside manual coverage I design and maintain
+            <strong>Selenium WebDriver</strong> suites in Java using the Page Object Model, run
+            through TestNG and Maven and triggered from Jenkins.
+          </p>
+          <p class="reveal">
+            My focus is the <strong>continuous improvement of testing processes</strong> —
+            sharpening strategy, widening automation coverage, and folding performance and security
+            checks into the sprint instead of bolting them on at the end.
+          </p>
+
+          <div class="domains reveal">
+            <span class="micro-label">Domains</span>
+            <ul class="tags">
+              <li>B2B E-Commerce &amp; E-Auctions</li>
+              <li>Enterprise Procurement</li>
+              <li>Loyalty &amp; Channel Engagement</li>
+              <li>Telecom &amp; Messaging</li>
+            </ul>
+          </div>
+        </div>
+
+        <ul class="principles">
+          <li class="principle card reveal">
+            <span class="p-num">01</span>
+            <h3>Shift-left by default</h3>
+            <p>Engaged from requirement walkthroughs and sprint planning onward, so ambiguity gets raised as a question — not discovered as a production defect.</p>
+          </li>
+          <li class="principle card reveal">
+            <span class="p-num">02</span>
+            <h3>Automation that pays off</h3>
+            <p>Maintainable Page Object frameworks in Selenium and Java, wired into Jenkins so regression runs on every build rather than every release.</p>
+          </li>
+          <li class="principle card reveal">
+            <span class="p-num">03</span>
+            <h3>Non-functional is functional</h3>
+            <p>Load, stress and scalability profiling in JMeter, plus OWASP-aligned vulnerability assessment with ZAP and Burp Suite, treated as release gates.</p>
+          </li>
+          <li class="principle card reveal">
+            <span class="p-num">04</span>
+            <h3>Cross-functional fluency</h3>
+            <p>At home in Agile ceremonies and working with cross-geo development, support and business teams through triage, RCA and release sign-off.</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ TECH MARQUEE ============================ -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <ul class="marquee-group">
+        <li>Selenium WebDriver</li><li>Java</li><li>TestNG</li><li>Maven</li><li>Page Object Model</li>
+        <li>Cucumber</li><li>Postman</li><li>Apache JMeter</li><li>OWASP ZAP</li><li>Burp Suite</li>
+        <li>Jenkins</li><li>Git</li><li>GitLab</li><li>JIRA</li><li>TestRail</li><li>MySQL</li><li>WireMock</li>
+      </ul>
+      <ul class="marquee-group">
+        <li>Selenium WebDriver</li><li>Java</li><li>TestNG</li><li>Maven</li><li>Page Object Model</li>
+        <li>Cucumber</li><li>Postman</li><li>Apache JMeter</li><li>OWASP ZAP</li><li>Burp Suite</li>
+        <li>Jenkins</li><li>Git</li><li>GitLab</li><li>JIRA</li><li>TestRail</li><li>MySQL</li><li>WireMock</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- =============================== SKILLS =============================== -->
+  <section class="section" id="skills">
+    <div class="container">
+      <header class="section-head">
+        <span class="section-index">02</span>
+        <div class="section-head-copy">
+          <span class="section-kicker reveal">Technical Skills</span>
+          <h2 class="section-title reveal">The stack I <em>test with</em></h2>
+          <p class="section-sub reveal">From UI automation and API contracts to load profiles and vulnerability scans — one toolchain, wired into CI.</p>
+        </div>
+      </header>
+
+      <div class="bento">
+
+        <article class="card bento-7 bento-feature reveal">
+          <div class="card-top">
+            <span class="card-icon">
+              <svg viewBox="0 0 24 24"><path d="M8 6l-5 6 5 6M16 6l5 6-5 6M13.5 4l-3 16"/></svg>
+            </span>
+            <span class="micro-label">Core strength</span>
+          </div>
+          <h3>Automation &amp; Frameworks</h3>
+          <p>Scalable, maintainable UI and API regression suites built to survive real product churn — Page Object structured, data-driven, and CI-triggered.</p>
+          <ul class="tags">
+            <li class="tag-hero">Selenium WebDriver</li><li class="tag-hero">Core Java</li>
+            <li>TestNG</li><li>Maven</li><li>Page Object Model</li><li>Cucumber</li><li>Automation Scripting</li>
+          </ul>
+        </article>
+
+        <article class="card bento-5 reveal">
+          <div class="card-top">
+            <span class="card-icon">
+              <svg viewBox="0 0 24 24"><path d="M12 22s8-3.6 8-10V5.5L12 2.5 4 5.5V12c0 6.4 8 10 8 10z"/><path d="M9.5 11.8h5v3.4h-5z"/><path d="M10.6 11.8v-1.4a1.4 1.4 0 0 1 2.8 0v1.4"/></svg>
+            </span>
+          </div>
+          <h3>Security Testing</h3>
+          <p>OWASP-aligned vulnerability assessment, integrated into automated pipelines.</p>
+          <ul class="tags">
+            <li>OWASP ZAP</li><li>Burp Suite</li><li>OWASP Top 10</li><li>Vulnerability Assessment</li>
+          </ul>
+        </article>
+
+        <article class="card bento-5 reveal">
+          <div class="card-top">
+            <span class="card-icon">
+              <svg viewBox="0 0 24 24"><path d="M12 21a9 9 0 1 0-9-9"/><path d="M12 12l4.6-4.6"/><path d="M3 12h3"/></svg>
+            </span>
+          </div>
+          <h3>Performance Testing</h3>
+          <p>Measuring response time, throughput and stability before load finds them in production.</p>
+          <ul class="tags">
+            <li>Apache JMeter</li><li>Load Testing</li><li>Stress Testing</li><li>Scalability Analysis</li>
+          </ul>
+        </article>
+
+        <article class="card bento-7 reveal">
+          <div class="card-top">
+            <span class="card-icon">
+              <svg viewBox="0 0 24 24"><path d="M4 8.5h16M4 15.5h16"/><circle cx="9" cy="8.5" r="2"/><circle cx="15" cy="15.5" r="2"/></svg>
+            </span>
+          </div>
+          <h3>API &amp; Database</h3>
+          <p>Validating service contracts, payloads and the data that lands behind them — from request assertion to row-level verification.</p>
+          <ul class="tags">
+            <li>Postman</li><li>REST API Testing</li><li>Response Validation</li><li>MySQL</li><li>SQL Queries</li><li>WireMock</li>
+          </ul>
+        </article>
+
+        <article class="card bento-4 reveal">
+          <div class="card-top">
+            <span class="card-icon">
+              <svg viewBox="0 0 24 24"><path d="M6 3v12"/><circle cx="6" cy="18.5" r="2.4"/><circle cx="18" cy="5.5" r="2.4"/><path d="M18 7.9v3.1a4 4 0 0 1-4 4H6"/></svg>
+            </span>
+          </div>
+          <h3>Tools &amp; CI/CD</h3>
+          <ul class="tags">
+            <li>JIRA</li><li>TestRail</li><li>Jenkins</li><li>CI/CD</li><li>Git</li><li>GitLab</li><li>MTT</li>
+          </ul>
+        </article>
+
+        <article class="card bento-4 reveal">
+          <div class="card-top">
+            <span class="card-icon">
+              <svg viewBox="0 0 24 24"><path d="M12 3l1.9 4.4L18.5 9l-4.6 1.6L12 15l-1.9-4.4L5.5 9l4.6-1.6L12 3z"/><path d="M18.4 15.4l.8 2 2 .8-2 .8-.8 2-.8-2-2-.8 2-.8.8-2z"/></svg>
+            </span>
+          </div>
+          <h3>AI-Assisted Testing</h3>
+          <ul class="tags">
+            <li>ChatGPT</li><li>GitHub Copilot</li><li>Google Gemini</li><li>Claude AI</li>
+          </ul>
+        </article>
+
+        <article class="card bento-4 reveal">
+          <div class="card-top">
+            <span class="card-icon">
+              <svg viewBox="0 0 24 24"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z"/><path d="M9 13.5l2 2 4-4.5"/></svg>
+            </span>
+          </div>
+          <h3>Process &amp; Practices</h3>
+          <ul class="tags">
+            <li>Agile / Scrum</li><li>STLC</li><li>Test Planning</li><li>Defect Life Cycle</li><li>RCA</li>
+          </ul>
+        </article>
+
+        <article class="card bento-12 bento-row reveal">
+          <div class="bento-row-head">
+            <span class="card-icon">
+              <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+            </span>
+            <div>
+              <h3>Testing Types</h3>
+              <p>Coverage across the functional and non-functional spectrum, web and mobile.</p>
+            </div>
+          </div>
+          <ul class="tags">
+            <li>Functional</li><li>Regression</li><li>Smoke</li><li>Sanity</li><li>System</li>
+            <li>Integration</li><li>Unit</li><li>Ad-hoc</li><li>Exploratory</li>
+            <li>Compatibility</li><li>Accessibility</li><li>Cross-Platform</li>
+          </ul>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= EXPERIENCE ============================= -->
+  <section class="section" id="experience">
+    <div class="container">
+      <header class="section-head">
+        <span class="section-index">03</span>
+        <div class="section-head-copy">
+          <span class="section-kicker reveal">Experience &amp; Projects</span>
+          <h2 class="section-title reveal">Where I have <em>delivered quality</em></h2>
+          <p class="section-sub reveal">Two employers, six enterprise clients, nine platforms — from national loyalty programs to global telecom messaging.</p>
+        </div>
+      </header>
+
+      <div class="timeline" id="timeline">
+        <div class="tl-rail" aria-hidden="true"><span class="tl-fill" id="tlFill"></span></div>
+
+        <!-- ==================== mjunction ==================== -->
+        <article class="tl-item reveal">
+          <div class="tl-node" aria-hidden="true"><span>mj</span></div>
+
+          <div class="tl-body">
+            <div class="tl-head">
+              <div>
+                <h3 class="tl-role">Software Test Engineer</h3>
+                <p class="tl-org">mjunction Services Limited</p>
+              </div>
+              <span class="chip-live"><span class="ping"><span></span></span>Jul 2024 — Present</span>
+            </div>
+
+            <p class="tl-summary">
+              Quality ownership across mjunction's digital commerce estate and its client loyalty
+              portfolio — currently testing the internal <strong>Vendor Portal</strong>,
+              <strong>Internal Procurement System</strong>, and the <strong>AGRO</strong> and
+              <strong>Metaljunction e-auction platforms</strong>, where I designed and implemented
+              a dedicated automation framework for bidding logic and critical auction workflows.
+            </p>
+
+            <div class="projects">
+
+              <article class="project card is-current">
+                <div class="project-head">
+                  <div>
+                    <span class="micro-label micro-live">Current</span>
+                    <h4>mjunction Internal Platforms</h4>
+                    <p class="project-meta">Vendor Portal · Internal Procurement · AGRO E-Auction · Metaljunction E-Auction</p>
+                  </div>
+                  <span class="project-date">Dec 2025 — Present</span>
+                </div>
+                <ul class="bullets">
+                  <li><strong>Designed and implemented an automation framework for the E-Auction platform</strong> to validate bidding logic and critical auction workflows end to end.</li>
+                  <li>Developed and executed <strong>Selenium WebDriver</strong> scripts in Java for functional and regression testing across procurement and auction modules.</li>
+                  <li>Tested vendor registration, quotation submission, order management, invoice upload and payment tracking on the Vendor Portal.</li>
+                  <li>Validated purchase-request creation, approval workflows and order fulfilment in the Internal Procurement System.</li>
+                  <li>Conducted <strong>security testing with OWASP ZAP and Burp Suite</strong> against real-time auction flows.</li>
+                  <li>Performed <strong>API testing in Postman</strong> and <strong>performance testing in JMeter</strong> to verify data exchange and behaviour under load.</li>
+                </ul>
+                <ul class="tags tags-sm">
+                  <li>Selenium</li><li>Java</li><li>TestNG</li><li>Maven</li><li>OWASP ZAP</li><li>Burp Suite</li><li>Postman</li><li>JMeter</li>
+                </ul>
+              </article>
+
+              <article class="project card">
+                <div class="project-head">
+                  <div>
+                    <h4>SAIL Suraksha</h4>
+                    <p class="project-meta">Steel Authority of India Limited · Web application</p>
+                  </div>
+                  <span class="project-date">May 2025 — Nov 2025</span>
+                </div>
+                <p class="project-desc">
+                  Loyalty and engagement platform connecting SAIL with dealers, retailers,
+                  contractors and influencers across steel distribution — secure registration,
+                  purchase tracking, reward-point management and redemption.
+                </p>
+                <ul class="bullets">
+                  <li>Executed functional, regression and exploratory testing across all platform modules.</li>
+                  <li>Conducted <strong>security testing with OWASP ZAP and Burp Suite</strong> to surface potential vulnerabilities.</li>
+                  <li>Ran API testing in Postman and performance testing in JMeter under varied load conditions.</li>
+                  <li>Performed compatibility and accessibility testing across browsers, devices and operating systems.</li>
+                </ul>
+                <ul class="tags tags-sm">
+                  <li>Web App</li><li>OWASP ZAP</li><li>Burp Suite</li><li>Postman</li><li>JMeter</li><li>JIRA</li>
+                </ul>
+              </article>
+
+              <article class="project card">
+                <div class="project-head">
+                  <div>
+                    <h4>Bangur Cement — Nirman Mitra 2.0</h4>
+                    <p class="project-meta">Bangur Cement · Android &amp; iOS</p>
+                  </div>
+                  <span class="project-date">Nov 2024 — Apr 2025</span>
+                </div>
+                <p class="project-desc">
+                  Loyalty and engagement mobile app for dealers, retailers, contractors and
+                  influencers — recording cement purchases, earning points and redeeming them for
+                  benefits and gifts.
+                </p>
+                <ul class="bullets">
+                  <li>Prepared test scenarios and cases from functional requirements and user stories.</li>
+                  <li>Executed smoke, functional, regression and exploratory testing across modules.</li>
+                  <li>Conducted API testing in Postman to validate backend services and data flow.</li>
+                  <li>Analysed response time, throughput and stability under load using JMeter.</li>
+                </ul>
+                <ul class="tags tags-sm">
+                  <li>Android</li><li>iOS</li><li>Postman</li><li>JMeter</li><li>JIRA</li>
+                </ul>
+              </article>
+
+              <article class="project card">
+                <div class="project-head">
+                  <div>
+                    <h4>Adani Cement — Reward Connect</h4>
+                    <p class="project-meta">Adani Cement · Android, iOS &amp; Web</p>
+                  </div>
+                  <span class="project-date">Jul 2024 — Dec 2024</span>
+                </div>
+                <p class="project-desc">
+                  Loyalty and rewards management platform for Adani Cement's channel partners,
+                  letting dealers, retailers and influencers earn points on purchases and redeem
+                  them for gifts and vouchers.
+                </p>
+                <ul class="bullets">
+                  <li>Owned coverage across web and mobile, from scenario design to result documentation.</li>
+                  <li>Performed smoke, regression and exploratory testing on newly developed modules.</li>
+                  <li>Handled bug verification, re-testing and compatibility testing across browsers and devices.</li>
+                  <li>Evaluated system stability, response time and scalability with JMeter.</li>
+                </ul>
+                <ul class="tags tags-sm">
+                  <li>Android</li><li>iOS</li><li>Web App</li><li>JMeter</li><li>JIRA</li>
+                </ul>
+              </article>
+
+            </div>
+          </div>
+        </article>
+
+        <!-- ==================== Tech Mahindra ==================== -->
+        <article class="tl-item reveal">
+          <div class="tl-node" aria-hidden="true"><span>TM</span></div>
+
+          <div class="tl-body">
+            <div class="tl-head">
+              <div>
+                <h3 class="tl-role">Software Test Engineer</h3>
+                <p class="tl-org">Tech Mahindra Limited</p>
+              </div>
+              <span class="chip-date">Aug 2021 — Jul 2024</span>
+            </div>
+
+            <p class="tl-summary">
+              Three years delivering testing for global-scale communication and connectivity
+              products — a <strong>Wi-Fi router management platform for BT, Europe</strong> and the
+              <strong>WhatsApp / Facebook (META)</strong> messaging service used by over two
+              billion people across 180 countries.
+            </p>
+
+            <div class="projects">
+
+              <article class="project card">
+                <div class="project-head">
+                  <div>
+                    <h4>WhatsApp / Facebook (META) Messaging</h4>
+                    <p class="project-meta">WhatsApp / Facebook META · Web &amp; mobile</p>
+                  </div>
+                  <span class="project-date">Aug 2023 — Jul 2024</span>
+                </div>
+                <p class="project-desc">
+                  A free cross-platform messaging service used in 180 countries by more than two
+                  billion people — multifunctional and multiplatform.
+                </p>
+                <ul class="bullets">
+                  <li>Ran smoke, regression and exploratory testing across web and app modules.</li>
+                  <li>Prepared test scenarios, executed cases to requirement, and retested defect fixes.</li>
+                  <li>Performed bug verification, compatibility testing and accessibility testing.</li>
+                  <li>Covered functional, non-functional and ad-hoc testing using MTT and TestRail.</li>
+                </ul>
+                <ul class="tags tags-sm">
+                  <li>MTT</li><li>TestRail</li><li>Postman</li><li>Spark</li><li>Accessibility</li>
+                </ul>
+              </article>
+
+              <article class="project card">
+                <div class="project-head">
+                  <div>
+                    <h4>Wi-Fi Router Management Platform</h4>
+                    <p class="project-meta">BT, Europe · Telecom</p>
+                  </div>
+                  <span class="project-date">Aug 2021 — Aug 2023</span>
+                </div>
+                <p class="project-desc">
+                  A platform for diagnosing and resolving home network connectivity issues —
+                  monitoring router performance, identifying faults and surfacing troubleshooting
+                  steps to keep connections stable.
+                </p>
+                <ul class="bullets">
+                  <li>Executed test plans across unit, integration and sanity layers within an Agile framework.</li>
+                  <li>Automated regression coverage with <strong>Selenium WebDriver, TestNG and Cucumber</strong>.</li>
+                  <li>Used <strong>WireMock</strong> to stub dependent services and Postman to verify API behaviour.</li>
+                  <li>Contributed to the account's <strong>Automation Vision and Strategy</strong> — the work behind the AQT Ninja award.</li>
+                </ul>
+                <ul class="tags tags-sm">
+                  <li>Java</li><li>Maven</li><li>Jenkins</li><li>Selenium</li><li>TestNG</li><li>Cucumber</li><li>WireMock</li>
+                </ul>
+              </article>
+
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================== AWARDS =============================== -->
+  <section class="section" id="awards">
+    <div class="container">
+      <header class="section-head">
+        <span class="section-index">04</span>
+        <div class="section-head-copy">
+          <span class="section-kicker reveal">Awards, Recognition &amp; Certifications</span>
+          <h2 class="section-title reveal">Recognised for <em>measurable impact</em></h2>
+        </div>
+      </header>
+
+      <div class="award-banner reveal">
+        <div class="ab-count" aria-hidden="true">
+          <span class="ab-num" data-count="5">0</span>
+          <span class="micro-label">awards</span>
+        </div>
+        <div class="ab-copy">
+          <h3>Five awards across automation, security testing and technology proficiency</h3>
+          <p>Recognised at both Tech Mahindra and mjunction Services Limited for initiatives that reduced regression effort, strengthened application security, and proved out new automation approaches.</p>
+        </div>
+        <span class="ab-trophy" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M8 4h8v5a4 4 0 0 1-8 0V4z"/><path d="M8 5H5.5v1.5A3.5 3.5 0 0 0 9 10M16 5h2.5v1.5A3.5 3.5 0 0 1 15 10"/><path d="M12 13v3M9 20.5h6M10.4 16.5h3.2l.7 4H9.7l.7-4z"/></svg>
+        </span>
+      </div>
+
+      <div class="bento">
+
+        <article class="card bento-7 award reveal">
+          <div class="card-top">
+            <span class="micro-label">mjunction Services Limited</span>
+            <span class="award-x">×3</span>
+          </div>
+          <h3>Spotlight Awards</h3>
+          <ol class="award-list">
+            <li><span class="al-num">01</span><span>Successful <strong>automation testing of the redemption fulfilment workflow</strong> for the loyalty program.</span></li>
+            <li><span class="al-num">02</span><span>Developing a <strong>Selenium automation POC for RACE auction rule testing</strong>.</span></li>
+            <li><span class="al-num">03</span><span>Completing an <strong>OWASP ZAP integration POC</strong> to enhance automated security testing.</span></li>
+          </ol>
+        </article>
+
+        <article class="card bento-5 award reveal">
+          <div class="card-top">
+            <span class="micro-label">Tech Mahindra</span>
+            <span class="card-icon card-icon-sm">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="14.5" r="5.5"/><path d="M12 12.4l.9 1.9 2 .3-1.5 1.4.4 2-1.8-1-1.8 1 .4-2-1.5-1.4 2-.3.9-1.9z"/><path d="M8.5 9L6 3.5h12L15.5 9"/></svg>
+            </span>
+          </div>
+          <h3>AQT Ninja</h3>
+          <p>Awarded for demonstrating <strong>technology proficiency</strong> and commitment towards the account's <strong>Automation Vision and Strategy</strong>.</p>
+        </article>
+
+        <article class="card bento-5 award reveal">
+          <div class="card-top">
+            <span class="micro-label">mjunction Services Limited</span>
+            <span class="award-x">×1</span>
+          </div>
+          <h3>Applause Award</h3>
+          <p>Recognised for outstanding contribution in <strong>security testing</strong> — identifying potential vulnerabilities and supporting the team in improving overall application security and quality.</p>
+        </article>
+
+        <article class="card bento-7 reveal">
+          <div class="card-top">
+            <span class="micro-label micro-accent">Certifications</span>
+            <span class="card-icon card-icon-sm">
+              <svg viewBox="0 0 24 24"><path d="M4 5.5h16v11H4z"/><path d="M8 20l4-2.2 4 2.2"/><path d="M9.5 10.5l1.7 1.7 3.3-3.4"/></svg>
+            </span>
+          </div>
+          <h3>Certified &amp; current</h3>
+          <ul class="certs">
+            <li><span class="cert-tick" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7"/></svg></span><span><b>Azure Fundamentals (AZ-900)</b><small>Microsoft</small></span></li>
+            <li><span class="cert-tick" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7"/></svg></span><span><b>Selenium Automation</b><small>Refer Me Institute</small></span></li>
+            <li><span class="cert-tick" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7"/></svg></span><span><b>Core Java</b><small>Udemy · Tech Mahindra</small></span></li>
+            <li><span class="cert-tick" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7"/></svg></span><span><b>UI/UX Development — JavaScript &amp; Node.js</b><small>Globsyn, Kolkata</small></span></li>
+          </ul>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== EDUCATION ============================== -->
+  <section class="section" id="education">
+    <div class="container">
+      <header class="section-head">
+        <span class="section-index">05</span>
+        <div class="section-head-copy">
+          <span class="section-kicker reveal">Education</span>
+          <h2 class="section-title reveal">Academic <em>background</em></h2>
+        </div>
+      </header>
+
+      <div class="edu-grid">
+        <article class="card edu reveal">
+          <span class="micro-label">2017 — 2020</span>
+          <h3>B.Tech, Computer Science &amp; Engineering</h3>
+          <p class="edu-inst">B. P. Poddar Institute of Management and Technology</p>
+          <div class="edu-score"><span class="score-num">75.6<small>%</small></span><span class="micro-label">aggregate</span></div>
+        </article>
+
+        <article class="card edu reveal">
+          <span class="micro-label">2014 — 2017</span>
+          <h3>Diploma, Computer Science &amp; Technology</h3>
+          <p class="edu-inst">Saroj Mohan Institute of Technology</p>
+          <div class="edu-score"><span class="score-num">66.65<small>%</small></span><span class="micro-label">aggregate</span></div>
+        </article>
+
+        <article class="card edu reveal">
+          <span class="micro-label">Languages</span>
+          <h3>Fluent in three</h3>
+          <p class="edu-inst">Comfortable working with cross-geo teams and clients.</p>
+          <ul class="tags">
+            <li>English</li><li>Hindi</li><li>Bengali</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================== CONTACT =============================== -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="contact-panel reveal">
+        <div class="contact-bg" aria-hidden="true"><span class="hero-glow hero-glow-3"></span><span class="hero-grid"></span></div>
+
+        <div class="contact-inner">
+          <span class="section-kicker">06 · Contact</span>
+          <h2 class="contact-title">Let's talk about <em>quality</em>.</h2>
+          <p class="contact-sub">
+            Open to Software Test Engineer and QA Automation roles. If you are building a team that
+            treats quality as engineering rather than a final gate, I would be glad to connect.
+          </p>
+
+          <div class="contact-actions">
+            <a class="btn btn-primary btn-lg magnetic" href="mailto:anirbansikdar102@gmail.com">
+              <span class="btn-inner">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6.5h18v11H3z"/><path d="M3 7l9 6 9-6"/></svg>
+                anirbansikdar102@gmail.com
+              </span>
+            </a>
+            <button class="btn btn-ghost btn-lg magnetic" id="copyEmail" type="button" data-email="anirbansikdar102@gmail.com">
+              <span class="btn-inner">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 9h10v11H9z"/><path d="M15 6H5v10"/></svg>
+                <span id="copyEmailLabel">Copy email</span>
+              </span>
+            </button>
+          </div>
+
+          <ul class="contact-meta">
+            <li>
+              <span class="micro-label">Phone</span>
+              <a href="tel:+918240820871">+91 82408 20871</a>
+            </li>
+            <li>
+              <span class="micro-label">LinkedIn</span>
+              <a href="https://www.linkedin.com/in/anirban-sikdar-bba85b85" target="_blank" rel="noopener">anirban-sikdar</a>
+            </li>
+            <li>
+              <span class="micro-label">Location</span>
+              <span>Kolkata, India</span>
+            </li>
+            <li>
+              <span class="micro-label">Résumé</span>
+              <a href="assets/Anirban-Sikdar-Resume.pdf" target="_blank" rel="noopener">Download PDF</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- =============================== FOOTER =============================== -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <a href="#hero" class="brand">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7"/></svg>
+      </span>
+      <span class="brand-text">
+        <strong>Anirban Sikdar</strong>
+        <small>Software Test Engineer · Manual &amp; Automation QA</small>
+      </span>
+    </a>
+
+    <ul class="footer-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#awards">Awards</a></li>
+      <li><a href="mailto:anirbansikdar102@gmail.com">Email</a></li>
+      <li><a href="https://www.linkedin.com/in/anirban-sikdar-bba85b85" target="_blank" rel="noopener">LinkedIn</a></li>
+      <li><a href="assets/Anirban-Sikdar-Resume.pdf" target="_blank" rel="noopener">Résumé</a></li>
+    </ul>
+
+    <p class="footer-copy">
+      <span>© <span id="year">2026</span> Anirban Sikdar</span>
+      <span class="footer-built">Hand-built with vanilla HTML, CSS &amp; JavaScript</span>
+    </p>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" type="button" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+</button>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
