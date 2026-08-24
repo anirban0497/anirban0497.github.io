@@ -14,6 +14,7 @@
    10. Console typing animation
    11. Copy email + toast
    12. Footer year
+   13. Initial paint
    ============================================================ */
 
 (function () {
